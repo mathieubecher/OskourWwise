@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}" PersistMode="Standalone">
+			<ChildrenList>
+				<BlendContainer Name="Test" ID="{0177B8A4-0F06-46B3-B858-CFBE1864EF04}" ShortID="754399673">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Phrase 2" ID="{96D48085-F2A7-4295-AE0F-D78849805F8F}" ShortID="361540039">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Phrase 2" ID="{C137F6AF-802B-4333-A889-7D759226ACD0}" ShortID="510792075">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.00617301038062"/>
+										<Property Name="TrimEnd" Type="Real64" Value="17.064891349481"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Phrase 2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Phrase 2" ID="{C137F6AF-802B-4333-A889-7D759226ACD0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
