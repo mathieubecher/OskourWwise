@@ -47,9 +47,21 @@
 					<ChildrenList>
 						<BlendContainer Name="Underwater-soundscape" ID="{C3B10220-21E2-4C58-967C-A25846590A36}" ShortID="541683604">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9CEB0652-D4A3-44ED-9BCA-1E64EA005B57}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="31"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -549,6 +561,1176 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Respirations" ID="{AD46BBC7-0958-4A43-B710-1737CB6D4CD5}" ShortID="124500059">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Respiration Calme 02" ID="{4BCDC6C8-ABE0-42BB-835B-E20690BA393A}" ShortID="296296486">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{323A2282-EE8A-44E1-B933-4F0276C5D71C}" ShortID="67178680" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{DCFA13E1-13E4-416B-BC24-6E2FC5162DC9}" ShortID="649936365" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Repiration Type 01 - 03" ID="{4C20B8BA-6819-4ABF-BA6C-DE887F0756CB}" ShortID="180781821">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 01 - 03" ID="{714E4514-FD53-438A-A710-D604FE5D5673}" ShortID="600504965">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.17946943483275E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="7.44548731257209E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.88460207612457E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.47671885813149"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 01 - 03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 01 - 03" ID="{714E4514-FD53-438A-A710-D604FE5D5673}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Repiration Type 01 - 04" ID="{0E7E7ECB-1ECA-4775-9C32-3BD358E64F41}" ShortID="1009779324">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 01 - 04" ID="{BAA98279-AAAF-4421-9652-1F4CB9C4AF08}" ShortID="917801709">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="8.01521049596309E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.131449452133794"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.131449452133795"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.53631087081891"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 01 - 04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 01 - 04" ID="{BAA98279-AAAF-4421-9652-1F4CB9C4AF08}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Repiration Type 01 - 05" ID="{9FE6BECA-B235-4395-81AA-E4B32E9D7D2C}" ShortID="676462671">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 01 - 05" ID="{6C2D5BE5-B681-49FF-BE4B-9DEFC385EBA9}" ShortID="223747933">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.57984429065744E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.128857352941177"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.85379757785467E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.74137701845444"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 01 - 05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 01 - 05" ID="{6C2D5BE5-B681-49FF-BE4B-9DEFC385EBA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Respiration" ID="{A3C43D70-CD76-47DF-9414-00711A3C535F}" ShortID="607135933">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Expirations" ID="{127C86DB-C860-4794-9710-E742398A266C}" ShortID="372664349">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Repiration Type 01 - 06" ID="{BFD76CAB-6E2D-42C9-8739-22A4C59604EE}" ShortID="414850631">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Repiration Type 01 - 06" ID="{A4B3B04F-353A-4129-8F44-CF668471B431}" ShortID="125218694">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="7.94764705882353E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="7.01262975778547E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.2415461361015"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.43213483275663"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Repiration Type 01 - 06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Repiration Type 01 - 06" ID="{A4B3B04F-353A-4129-8F44-CF668471B431}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Repiration Type 01 - 01" ID="{67B2CB64-B998-4545-8488-DF20C6B74D4D}" ShortID="709534430">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Repiration Type 01 - 01" ID="{85219C36-2151-4547-864D-65E255779CE7}" ShortID="188374417">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.849564561707035"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Repiration Type 01 - 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Repiration Type 01 - 01" ID="{85219C36-2151-4547-864D-65E255779CE7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Expiration Type 01" ID="{303A1D16-250F-4898-9C64-7603DF2A4DE8}" ShortID="338526268">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 01 - 02" ID="{3CC31F8A-6D9E-4E25-B111-537ADC4B4E76}" ShortID="105992950">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.87716262975779E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.55550749711646E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.115086505190311"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.42640715109573"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 01 - 02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 01 - 02" ID="{3CC31F8A-6D9E-4E25-B111-537ADC4B4E76}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Respiration Rapide 01" ID="{E3906A68-F086-4168-961E-A83B61EB1A29}" ShortID="735418953">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{1FAB0B31-8B7F-425F-887C-1DCF362BC891}" ShortID="211969643" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{C03A35E5-274F-4851-B52E-B48AB609D609}" ShortID="563222385" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Repiration Type 02 - 01" ID="{0A19F2FD-9D1C-4469-8EB0-C961BBBBAE55}" ShortID="980022487">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{7669BE73-7F58-4E5F-90B6-8CB5696445C3}" ShortID="668586914" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+														<Property Name="GainBand1" Type="Real32" Value="-3"/>
+														<Property Name="OutputLevel" Type="Real32" Value="8"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{48C5E938-BD86-4BD8-AF5B-C2F05922C424}" ShortID="824152321" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="ERPattern" Type="int32" Value="25"/>
+														<Property Name="PreDelay" Type="Real32" Value="8"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+														<Property Name="RoomShape" Type="Real32" Value="75"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 02 - 01" ID="{B343CC8E-E366-41FC-A16E-F26764FCB373}" ShortID="815132754">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="6.39239331026533E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.75468996539791"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 02 - 01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 02 - 01" ID="{B343CC8E-E366-41FC-A16E-F26764FCB373}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Repiration Type 02 - 04" ID="{9B7B9C63-A78D-4D8C-A3CB-4B06B16964FD}" ShortID="876700083">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{F65C05A9-7F63-4548-88CD-F022F6032194}" ShortID="848253344" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+														<Property Name="GainBand1" Type="Real32" Value="-3"/>
+														<Property Name="OutputLevel" Type="Real32" Value="8"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{54A49344-CE07-4F8C-AC06-ABF2F7B923B5}" ShortID="281596252" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="ERPattern" Type="int32" Value="25"/>
+														<Property Name="PreDelay" Type="Real32" Value="8"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+														<Property Name="RoomShape" Type="Real32" Value="75"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 02 - 04" ID="{E5DA7D55-5800-41EF-B2F4-90FB57DEEAF1}" ShortID="712287366">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.194146712802768"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.124038177623991"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.175271337946944"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.9202901384083"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 02 - 04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 02 - 04" ID="{E5DA7D55-5800-41EF-B2F4-90FB57DEEAF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Repiration Type 02 - 03" ID="{B7D8EF04-386A-4D07-838E-C4DD1B85B03A}" ShortID="158623986">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{72CA1312-C6F7-47DE-8E11-C6EB74B0D6B5}" ShortID="594000437" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+														<Property Name="GainBand1" Type="Real32" Value="-3"/>
+														<Property Name="OutputLevel" Type="Real32" Value="8"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{638FA0EE-2B65-464B-83C0-E5CB46D49899}" ShortID="342425822" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="ERPattern" Type="int32" Value="25"/>
+														<Property Name="PreDelay" Type="Real32" Value="8"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+														<Property Name="RoomShape" Type="Real32" Value="75"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 02 - 03" ID="{854A3FA1-C7AC-4A61-8E01-4A7B033D26D4}" ShortID="765017002">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.260024509803922"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.152955594002307"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.263083621683968"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.244728950403691"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.45067820069204"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 02 - 03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 02 - 03" ID="{854A3FA1-C7AC-4A61-8E01-4A7B033D26D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Repiration Type 02 - 02" ID="{D20FBFFB-424B-4022-998C-8689817D2BA7}" ShortID="383294802">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{DDBF86B4-382A-4A7F-AA84-C99588C17677}" ShortID="295520858" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+														<Property Name="GainBand1" Type="Real32" Value="-3"/>
+														<Property Name="OutputLevel" Type="Real32" Value="8"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{C3EF77EB-8CD0-4463-8BA2-BE23FE123F83}" ShortID="691198460" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="ERPattern" Type="int32" Value="25"/>
+														<Property Name="PreDelay" Type="Real32" Value="8"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+														<Property Name="RoomShape" Type="Real32" Value="75"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 02 - 02" ID="{80862C01-D6A9-4B15-9234-EAB37877CA8C}" ShortID="1018782638">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.104106531141869"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.138808708189158"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.179820371972318"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.43551552768166"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 02 - 02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 02 - 02" ID="{80862C01-D6A9-4B15-9234-EAB37877CA8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Respiration Calme 01" ID="{A534F13C-8D02-46DF-83BD-B3F5350ECEF5}" ShortID="477764939">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{72079560-7055-4EA2-9D8D-6C94E0FE4560}" ShortID="343558290" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{06D9DFDF-A5BE-40B2-BEE6-20EC3138EEF2}" ShortID="712129034" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Expirations" ID="{C0AC4B2D-2867-4CF2-81F5-D7A647F62097}" ShortID="215034510">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Expiration 1" ID="{CAFB3154-3EC0-484E-8A49-0CDF64C3BBC6}" ShortID="904637402">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 03 - 03" ID="{EFEAD0C3-48AA-428B-BDB3-CD57E919962B}" ShortID="586098695">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.33873702422143E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.163907843137254"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.9840869088812"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.28088719723183"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 03 - 03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 03 - 03" ID="{EFEAD0C3-48AA-428B-BDB3-CD57E919962B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Expiration 2" ID="{B497CFE8-0E43-4AED-9EA0-679EBC08E69D}" ShortID="921567482">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 03 - 04" ID="{30BA4A5A-7FB5-4870-8D1A-E415EB354856}" ShortID="281097748">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.39650807381776E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.053977551903114"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.76926420126874"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.93278032006919"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 03 - 04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 03 - 04" ID="{30BA4A5A-7FB5-4870-8D1A-E415EB354856}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Expiration 3" ID="{5D5B5C22-8FEB-4CCB-8066-65200F2B076C}" ShortID="108637296">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 03 - 04" ID="{AC5EE15E-05EE-4E0A-8352-13C01BAE7197}" ShortID="474752918">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.39650807381776E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.053977551903114"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.51612184256055"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.60167038638984"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 03 - 04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 03 - 04" ID="{AC5EE15E-05EE-4E0A-8352-13C01BAE7197}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Inspiration" ID="{09FDE578-595A-4A54-B856-4477637E9329}" ShortID="34415737">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Inspiration 1" ID="{3248D464-8996-42B2-B3D3-2A651E10A295}" ShortID="421762887">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 03 - 03" ID="{CA69304A-AD5A-4636-A57A-AC36D6994531}" ShortID="714631191">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.110878835063437"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.163907843137254"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.76778990772779"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.74641614763553"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 03 - 03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 03 - 03" ID="{CA69304A-AD5A-4636-A57A-AC36D6994531}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Inspiration 2" ID="{EE69AA3B-5CD0-414C-91E9-69F84875EA3E}" ShortID="565841799">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 03 - 01" ID="{F731595E-E486-4180-B60D-D855F2CDFCCD}" ShortID="842067846">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.90934256055362E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="8.59134948096889E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.94792964244521"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.84388465974625"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 03 - 01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 03 - 01" ID="{F731595E-E486-4180-B60D-D855F2CDFCCD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Inspiration 3" ID="{70FA6461-6712-4E60-84D9-02C4776C7281}" ShortID="303231353">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Repiration Type 03 - 02" ID="{CB9ADBD3-6521-43BF-A0BF-BBF34F7E914C}" ShortID="582287287">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="5.62471164936563E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="6.92272202998847E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.220661764705882"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.23310986159169"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Repiration Type 03 - 02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Repiration Type 03 - 02" ID="{CB9ADBD3-6521-43BF-A0BF-BBF34F7E914C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Respiration Rapide 02" ID="{C286F006-67AA-4D10-BA4C-8782C6C47AA8}" ShortID="610237943">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{28AB03D3-8ECB-48D5-8D7E-26BAD164520F}" ShortID="521300229" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{AD36A852-0AC6-425E-9918-FA8304EBA2C0}" ShortID="831518810" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Repiration Type 04" ID="{9B6E721D-8B5D-473C-A6A1-97DCD2AAEA40}" ShortID="161076175">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Repiration Type 04" ID="{E95429FF-82B0-4811-9F46-C40967624C60}" ShortID="939164987">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.161894809688581"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.182131660899653"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.718408217993079"/>
+												<Property Name="TrimEnd" Type="Real64" Value="13.5384534602076"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Repiration Type 04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Repiration Type 04" ID="{E95429FF-82B0-4811-9F46-C40967624C60}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="Stamina Multiple" ID="{AFC6A753-A30F-42F6-95CF-1714BA5D71DC}" ShortID="390509887">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{8CDFDCF5-7F35-4B3A-A11E-3C25687E8EC3}" ShortID="370115418" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{A33589E7-8791-49CB-BC07-4FEDCCD9DB44}" ShortID="705244155" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Stamina Multiple - 01" ID="{166002BC-C247-4AA5-9B48-214D5B85EDEF}" ShortID="178896250">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stamina Multiple - 01" ID="{A7D077F4-613D-4458-AD8D-B013D8F47077}" ShortID="790329340">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.80959342560554E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15492249134948"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.135557179930796"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.24962266435986"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Stamina Multiple - 01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stamina Multiple - 01" ID="{A7D077F4-613D-4458-AD8D-B013D8F47077}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stamina Multiple - 02" ID="{210AE2D9-C09B-4DEB-9886-CE10C3DFDEA3}" ShortID="670927646">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stamina Multiple - 02" ID="{9D7D58B3-20C5-48EF-9F44-F756EBC9D69D}" ShortID="860964560">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.126772058823529"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0718375"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.139449264705882"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.07510808823529"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Stamina Multiple - 02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stamina Multiple - 02" ID="{9D7D58B3-20C5-48EF-9F44-F756EBC9D69D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stamina Multiple - 03" ID="{F0473AF1-3785-4A49-A8EA-F7A04E497314}" ShortID="37045412">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stamina Multiple - 03" ID="{45DF741F-60AF-40C7-A16D-AA3513A7BFD8}" ShortID="608325220">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.58623414071511E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="9.97541810841982E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.97541810841984E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.28543961937716"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Stamina Multiple - 03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stamina Multiple - 03" ID="{45DF741F-60AF-40C7-A16D-AA3513A7BFD8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Stamina Simple" ID="{4177C15A-67B7-4A2A-A07B-E98A50E08F34}" ShortID="269539113">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{565A755A-92E8-4477-A28E-2B2AAA0A6863}" ShortID="672970018" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{DC713E43-BF62-4548-809E-514A2D8BBFBC}" ShortID="672175226" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Stamina Simple - 01" ID="{1ABDC29C-40A4-4B9D-941F-1B00CA9D7D73}" ShortID="180377309">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stamina Simple - 01" ID="{B177C87D-0C12-4E61-B69A-32A79088C728}" ShortID="898951812">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.211109919261822"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="9.11611014994236E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.498987081891581"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Stamina Simple - 01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stamina Simple - 01" ID="{B177C87D-0C12-4E61-B69A-32A79088C728}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Manque_oxygene" ID="{0A41B258-E664-4F85-A804-CAAA8B3B77E0}" ShortID="858233630">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{377A867D-DC5B-4947-9262-F26270631269}" ShortID="720853699" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{A41482CF-8C5E-412D-8833-A7D3338710DD}" ShortID="45547760" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Manque Oxygene 01" ID="{D0F6D154-D5C8-4A82-A2B9-E9F2DBF774AE}" ShortID="143664338">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stamina Simple - 02" ID="{038B45CB-ACD3-4B2B-AE82-C2E30BEFE4CB}" ShortID="172080907">
+											<Language>SFX</Language>
+											<AudioFile>Stamina Simple - 02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stamina Simple - 02" ID="{038B45CB-ACD3-4B2B-AE82-C2E30BEFE4CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stamina Simple - 03" ID="{17AF30DE-646A-447F-97F8-896A920AC251}" ShortID="1002869813">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{DD28C677-E113-4188-A1FE-DBFF3ABA53B5}" ShortID="551798864" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+														<Property Name="GainBand1" Type="Real32" Value="-3"/>
+														<Property Name="OutputLevel" Type="Real32" Value="8"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{4EC452FA-4408-491A-A88F-5D7D33B4E6AE}" ShortID="442246223" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="ERPattern" Type="int32" Value="25"/>
+														<Property Name="PreDelay" Type="Real32" Value="8"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+														<Property Name="RoomShape" Type="Real32" Value="75"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stamina Simple - 03" ID="{0FFD8A35-93E0-463D-AA9B-5CB5DAC3B557}" ShortID="282590047">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.1879815455594"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.58574798154557"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Stamina Simple - 03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stamina Simple - 03" ID="{0FFD8A35-93E0-463D-AA9B-5CB5DAC3B557}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

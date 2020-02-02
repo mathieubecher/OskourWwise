@@ -23,13 +23,193 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{6312B78A-D2D8-497C-A68B-853039A14563}" ShortID="575553390">
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Respiration_Calme_01" ID="{BD086957-2FBF-48AD-8233-57BE2C937C4F}">
+					<ChildrenList>
+						<Action Name="" ID="{1C81ED51-43BF-4D05-A7A3-91DDB3A04287}" ShortID="727204906">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Calme 01" ID="{A534F13C-8D02-46DF-83BD-B3F5350ECEF5}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Underwater_ambience" ID="{CD5B9AAB-0A3F-4218-A4F1-C39CD552A06F}">
+					<ChildrenList>
+						<Action Name="" ID="{D5220ADD-2790-4F91-A57D-94AED0C45EC8}" ShortID="538082667">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Underwater-soundscape" ID="{C3B10220-21E2-4C58-967C-A25846590A36}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Respiration_Calme_01" ID="{A4C213EE-5508-40CC-88C2-99197381AD8F}">
+					<ChildrenList>
+						<Action Name="" ID="{5357C285-2FBD-46C6-B9E5-82A66A1F4AA2}" ShortID="860102602">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Underwater-soundscape" ID="{C3B10220-21E2-4C58-967C-A25846590A36}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+									<ObjectRef Name="Respiration Calme 01" ID="{A534F13C-8D02-46DF-83BD-B3F5350ECEF5}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Respiration_Calme_02" ID="{6F0B7023-899A-42D7-8DE0-BC2EDDEF5D84}">
+					<ChildrenList>
+						<Action Name="" ID="{A70347EE-65BC-4B02-9670-B95A2D8467A2}" ShortID="318076687">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Calme 02" ID="{4BCDC6C8-ABE0-42BB-835B-E20690BA393A}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Respiration_Calme_02" ID="{AF7271EB-240A-4758-8690-1BE42AACB730}">
+					<ChildrenList>
+						<Action Name="" ID="{5F6AC74F-D927-42B6-B080-394B610C8B8C}" ShortID="969927723">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Calme 02" ID="{4BCDC6C8-ABE0-42BB-835B-E20690BA393A}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Respiration_Rapide_01" ID="{30E05AFD-F23A-46E6-AA81-49AC880A5B82}">
+					<ChildrenList>
+						<Action Name="" ID="{5C4C6DD8-2186-4705-B4BE-9B84711B3B5F}" ShortID="431128754">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Rapide 01" ID="{E3906A68-F086-4168-961E-A83B61EB1A29}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Respiration_Rapide_01" ID="{B17CE5DA-680E-4A93-BA86-9B00476D4CE0}">
+					<ChildrenList>
+						<Action Name="" ID="{E6CECD1A-F6D2-4EB4-A205-D4F9B910FA88}" ShortID="684295998">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Rapide 01" ID="{E3906A68-F086-4168-961E-A83B61EB1A29}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Respiration_Rapide_02" ID="{142464E3-D8A1-4C61-AF52-5A0EEA3AE36E}">
+					<ChildrenList>
+						<Action Name="" ID="{4C975984-6CDB-4707-9E8D-60A8AA87D6F6}" ShortID="82903131">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Rapide 02" ID="{C286F006-67AA-4D10-BA4C-8782C6C47AA8}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Respiration_Rapide_02" ID="{86B6CCA7-577E-4AA1-A2F1-B94946FF1BE5}">
+					<ChildrenList>
+						<Action Name="" ID="{3D3F2652-0290-45BC-AA76-A8A40E46DA84}" ShortID="588931504">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration Rapide 02" ID="{C286F006-67AA-4D10-BA4C-8782C6C47AA8}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stamina_Multiple" ID="{404C0555-5C33-40F1-992D-AAC9595C2483}">
+					<ChildrenList>
+						<Action Name="" ID="{588EEA3C-985D-4493-9562-4E18074A1EA0}" ShortID="842191979">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stamina Multiple" ID="{AFC6A753-A30F-42F6-95CF-1714BA5D71DC}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Stamina_Multiple" ID="{8E97F24D-A572-427F-953C-ACCCED2D6579}">
+					<ChildrenList>
+						<Action Name="" ID="{057B3B43-B8AA-4E32-B0DA-EDCEB8B3389F}" ShortID="292220462">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stamina Multiple" ID="{AFC6A753-A30F-42F6-95CF-1714BA5D71DC}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stamina_Simple" ID="{D5DA0DEA-6005-452F-BA13-503F7C3A1A98}">
+					<ChildrenList>
+						<Action Name="" ID="{07021920-773D-49BE-BBA4-749C83C5FA54}" ShortID="640882923">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stamina Simple" ID="{4177C15A-67B7-4A2A-A07B-E98A50E08F34}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Stamina_Simple" ID="{19A028E4-4BAF-466C-AA05-C3E6C7BD8584}">
+					<ChildrenList>
+						<Action Name="" ID="{7D09A3D5-3FBA-40FC-A7FA-58A5D041C27C}" ShortID="627170324">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stamina Simple" ID="{4177C15A-67B7-4A2A-A07B-E98A50E08F34}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Manque_oxygene" ID="{0AF9D2CE-3CB6-4B17-8466-D807D9945A8B}">
+					<ChildrenList>
+						<Action Name="" ID="{FDCC4AC4-7299-4057-BF2F-778D4765971E}" ShortID="712509081">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Manque_oxygene" ID="{0A41B258-E664-4F85-A804-CAAA8B3B77E0}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Manque_oxygene" ID="{3A5949DB-EAF4-4D7E-9FFC-2F3C8BAC35A6}">
+					<ChildrenList>
+						<Action Name="" ID="{40388E4B-C35D-422E-9C53-6445475210EA}" ShortID="516729835">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Manque_oxygene" ID="{0A41B258-E664-4F85-A804-CAAA8B3B77E0}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

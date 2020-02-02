@@ -9,8 +9,21 @@
 							<ObjectRef Name="Test" ID="{DDEE01D5-35A1-460C-8A79-53E1C5656606}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Respiration_Calme_01" ID="{BD086957-2FBF-48AD-8233-57BE2C937C4F}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Underwater_ambience" ID="{C6BBA9F5-D79F-4CCB-8787-FFF8C677F6A2}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}"/>
+							<Position X="2" Y="0"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Modify_respiration_frequency" ID="{88CC5F1A-F7B6-4F49-9948-1735808DD84C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -5,8 +5,23 @@
 			<ChildrenList>
 				<SoundBank Name="OskourWwise" ID="{B5D7C082-B3D6-4BB7-8011-AA6AE800C1BB}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Respiration_Calme_01" ID="{A4C213EE-5508-40CC-88C2-99197381AD8F}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Stamina_Multiple" ID="{404C0555-5C33-40F1-992D-AAC9595C2483}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Underwater_ambience" ID="{CD5B9AAB-0A3F-4218-A4F1-C39CD552A06F}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Stamina_Multiple" ID="{8E97F24D-A572-427F-953C-ACCCED2D6579}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Respiration_Calme_02" ID="{6F0B7023-899A-42D7-8DE0-BC2EDDEF5D84}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Stamina_Simple" ID="{D5DA0DEA-6005-452F-BA13-503F7C3A1A98}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Test" ID="{DDEE01D5-35A1-460C-8A79-53E1C5656606}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Stamina_Simple" ID="{19A028E4-4BAF-466C-AA05-C3E6C7BD8584}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Respiration_Rapide_01" ID="{30E05AFD-F23A-46E6-AA81-49AC880A5B82}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Respiration_Calme_02" ID="{AF7271EB-240A-4758-8690-1BE42AACB730}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Respiration_Calme_01" ID="{BD086957-2FBF-48AD-8233-57BE2C937C4F}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Respiration_Rapide_01" ID="{B17CE5DA-680E-4A93-BA86-9B00476D4CE0}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Respiration_Rapide_02" ID="{86B6CCA7-577E-4AA1-A2F1-B94946FF1BE5}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Manque_oxygene" ID="{0AF9D2CE-3CB6-4B17-8466-D807D9945A8B}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Respiration_Rapide_02" ID="{142464E3-D8A1-4C61-AF52-5A0EEA3AE36E}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Underwater_ambience" ID="{C6BBA9F5-D79F-4CCB-8787-FFF8C677F6A2}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Manque_oxygene" ID="{3A5949DB-EAF4-4D7E-9FFC-2F3C8BAC35A6}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

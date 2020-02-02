@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{25176DC5-DC9F-4DED-B47A-9213D5319CAF}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{25176DC5-DC9F-4DED-B47A-9213D5319CAF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{25176DC5-DC9F-4DED-B47A-9213D5319CAF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Modify_respiration_frequency" ID="{88CC5F1A-F7B6-4F49-9948-1735808DD84C}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
