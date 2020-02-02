@@ -39,6 +39,518 @@
 						</Sound>
 					</ChildrenList>
 				</BlendContainer>
+				<Folder Name="Ambience" ID="{BE858B57-6694-4999-9A93-242DD991C94D}" ShortID="341357463">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<BlendContainer Name="Underwater-soundscape" ID="{C3B10220-21E2-4C58-967C-A25846590A36}" ShortID="541683604">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Ambience_elements" ID="{C57AC365-C638-4B93-AF0D-C0C5897840DC}" ShortID="656327730">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Horror Ambience" ID="{FAA17C25-E006-42A3-B11A-055F5D933FC8}" ShortID="505543891">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="horror_ambience_2" ID="{10D7C9C8-A8F7-4C64-AB12-78B31D47683D}" ShortID="359868795">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="horror_ambience_2" ID="{E0244235-8306-4942-91D5-E6FAF679FBEC}" ShortID="376464674">
+															<Language>SFX</Language>
+															<AudioFile>horror_ambience_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="horror_ambience_2" ID="{E0244235-8306-4942-91D5-E6FAF679FBEC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="horror_ambience_1" ID="{C654740D-CEAB-41D4-ADF3-7312CC9B7A37}" ShortID="553138754">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="horror_ambience_1" ID="{3DF0F329-39B5-4E67-8732-36CD9F9FC117}" ShortID="918811913">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.843471251441753"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.910061087081893"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.532718685121107"/>
+																<Property Name="TrimEnd" Type="Real64" Value="31.9853177191465"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>horror_ambience_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="horror_ambience_1" ID="{3DF0F329-39B5-4E67-8732-36CD9F9FC117}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Low Submarine Sound" ID="{7C9727E0-BF70-46BE-866B-12ABAC7EEFBE}" ShortID="921787985">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9CF08A1F-4F7B-4BF2-BF46-7261885617A9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Low_submarine_cry" ID="{C5503755-4557-4E2A-86D2-82C1F47AD039}" ShortID="367856903">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Low_submarine_cry" ID="{C0571956-30EC-4BE3-8653-A5B3D1142E0E}" ShortID="586405997">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.719723183391003"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.40346020761246"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.818685121107267"/>
+																<Property Name="TrimEnd" Type="Real64" Value="9.0325259515571"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Low_submarine_cry.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Low_submarine_cry" ID="{C0571956-30EC-4BE3-8653-A5B3D1142E0E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Low_submarine_drone" ID="{E3E649E2-EFDA-4594-B41D-14A58199508F}" ShortID="814292269">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Low_submarine_drone" ID="{A1CA447A-684F-48C7-A67E-20B97DEB0A6A}" ShortID="1054380156">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.2"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.04705882352941"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="22.8"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Low_submarine_drone.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Low_submarine_drone" ID="{A1CA447A-684F-48C7-A67E-20B97DEB0A6A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Three_Low_submarine_cry" ID="{58DB18E1-14B4-4237-8115-59AB597F8F7A}" ShortID="112090140">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-560</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Three_Low_submarine_cry" ID="{E78921EA-4C86-4154-8406-C8C37A8F5549}" ShortID="455574895">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.486505190311419"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.89480968858132"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.33010380622837"/>
+																<Property Name="TrimEnd" Type="Real64" Value="34.3626297577855"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Three_Low_submarine_cry.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Three_Low_submarine_cry" ID="{E78921EA-4C86-4154-8406-C8C37A8F5549}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Three_Low_submarine_cry_silence_before" ID="{4CEF3837-D9D9-418D-8F03-D94A071878C9}" ShortID="337914591">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F93D7596-C1D6-48FF-A6F5-7A78F347E52C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="354"/>
+																			<Property Name="Min" Type="Real64" Value="-480"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Three_Low_submarine_cry_silence_before" ID="{17A7D883-C9AE-4A90-A93D-D97A71A13CF5}" ShortID="20642613">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.5038062283737"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.14878892733564"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="24.6415224913495"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Three_Low_submarine_cry_silence_before.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Three_Low_submarine_cry_silence_before" ID="{17A7D883-C9AE-4A90-A93D-D97A71A13CF5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Two_Low_submarine_cry" ID="{2DCE981C-449C-46D5-9866-A72342D86864}" ShortID="510512554">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Two_Low_submarine_cry" ID="{9573CB71-7B15-45F4-8408-F7BABA96C18D}" ShortID="422324325">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.14256055363322"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.06782006920415"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3.31349480968858"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.88996539792387"/>
+																<Property Name="TrimEnd" Type="Real64" Value="32.3626297577855"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Two_Low_submarine_cry.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Two_Low_submarine_cry" ID="{9573CB71-7B15-45F4-8408-F7BABA96C18D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Underwater" ID="{E2CDDFC5-BF90-45E9-9D53-4CAABE847020}" ShortID="760977925">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Underwater_02" ID="{448F205A-C916-4BB1-AFBD-4D88871ADB36}" ShortID="424834522">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>1053</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F15FFD12-B185-4E50-A385-4C6314E11C6F}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Underwater" ID="{4570FED7-1E53-4F85-9A4D-019A6B7F4DE7}" ShortID="548206216">
+													<Language>SFX</Language>
+													<AudioFile>Underwater.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Underwater" ID="{4570FED7-1E53-4F85-9A4D-019A6B7F4DE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Underwater_01" ID="{037A7A2C-AC35-47BA-B9AB-CB6ABFC74F8B}" ShortID="739207043">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>1053</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Underwater" ID="{7A31CA92-E450-4C1C-BB3E-94D42C7DDDB5}" ShortID="700932702">
+													<Language>SFX</Language>
+													<AudioFile>Underwater.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="548206216"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Underwater" ID="{7A31CA92-E450-4C1C-BB3E-94D42C7DDDB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Whales" ID="{2F5D77E2-ED42-4AE8-A787-212D31A35EA7}" ShortID="880352346">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2F775BA4-9157-4553-A332-89832E4CD0F8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="227"/>
+															<Property Name="Min" Type="Real64" Value="-455"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="whales_cry_2" ID="{3FDA7F3D-C7E0-4B00-BCD2-0F53CB4B8947}" ShortID="426584615">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="whales_cry_2" ID="{E47129EF-1A80-499D-9D80-A5F996E7DC11}" ShortID="656612288">
+													<Language>SFX</Language>
+													<AudioFile>whales_cry_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="whales_cry_2" ID="{E47129EF-1A80-499D-9D80-A5F996E7DC11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="whales_cry" ID="{12F32BE3-B402-40B7-82C7-13FCBE3FE4B4}" ShortID="446608894">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="whales_cry" ID="{5911EECC-F516-429F-AEEE-D91BB7E9837F}" ShortID="21753682">
+													<Language>SFX</Language>
+													<AudioFile>whales_cry.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="whales_cry" ID="{5911EECC-F516-429F-AEEE-D91BB7E9837F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="whales_cry_3" ID="{54B7101A-C68C-4698-8DE5-426C1408C94C}" ShortID="127469007">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="whales_cry_3" ID="{19F613E1-6879-46F7-8B24-D6D2DA0FF5FF}" ShortID="330586582">
+													<Language>SFX</Language>
+													<AudioFile>whales_cry_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="whales_cry_3" ID="{19F613E1-6879-46F7-8B24-D6D2DA0FF5FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="whales_cry_5" ID="{24B3AC75-C05F-4C7D-A2EF-7B36A62D93E8}" ShortID="270793758">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="whales_cry_5" ID="{5067C9EF-A263-402D-812F-A9A554B5345F}" ShortID="114349610">
+													<Language>SFX</Language>
+													<AudioFile>whales_cry_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="whales_cry_5" ID="{5067C9EF-A263-402D-812F-A9A554B5345F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="whales_cry_4" ID="{C94AB9C3-06A7-4DD9-AEE8-75B6D1682576}" ShortID="218896680">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="whales_cry_4" ID="{9F7AC53D-8398-4ED5-A4E1-E69A713063B1}" ShortID="250153729">
+													<Language>SFX</Language>
+													<AudioFile>whales_cry_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="whales_cry_4" ID="{9F7AC53D-8398-4ED5-A4E1-E69A713063B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -14,6 +14,27 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Underwater_ambience" ID="{C6BBA9F5-D79F-4CCB-8787-FFF8C677F6A2}">
+					<ChildrenList>
+						<Action Name="" ID="{03DEB4CB-485D-4053-856A-BB5832B887DC}" ShortID="991841972">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Underwater-soundscape" ID="{C3B10220-21E2-4C58-967C-A25846590A36}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6312B78A-D2D8-497C-A68B-853039A14563}" ShortID="575553390">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Underwater-soundscape" ID="{C3B10220-21E2-4C58-967C-A25846590A36}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
