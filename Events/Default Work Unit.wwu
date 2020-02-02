@@ -215,6 +215,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Drill" ID="{2D4FFFB4-CCFE-407E-997F-4831B1916375}">
+					<ChildrenList>
+						<Action Name="" ID="{75222578-8A7F-401C-979A-B6B8D9996E5A}" ShortID="16813351">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drill" ID="{F210E3C9-0098-4B3C-9928-16A1A17A13CB}" WorkUnitID="{4F408538-D0B4-4684-8B0B-AA39BC3CB284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

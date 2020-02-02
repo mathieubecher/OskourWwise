@@ -1733,6 +1733,137 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Tool" ID="{39C421BE-586A-4116-AF20-0F11EFB0D5EF}" ShortID="72256270">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Drill" ID="{F210E3C9-0098-4B3C-9928-16A1A17A13CB}" ShortID="465656738">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>19</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{E0966379-9E25-4A66-9959-688842C2DBE7}" ShortID="209294491" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="5665"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="OutputLevel" Type="Real32" Value="8"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{C0979036-7931-4D37-A241-FEE14F32C4B1}" ShortID="789488036" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="ERPattern" Type="int32" Value="25"/>
+												<Property Name="PreDelay" Type="Real32" Value="0"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+												<Property Name="RoomShape" Type="Real32" Value="75"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Electric Drill 01" ID="{2F97D644-B129-4E7A-B9FB-8F25EDD858EA}" ShortID="1064950299">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Electric Drill 01" ID="{C391B68A-6287-4CA4-98B6-F96AB7DB4331}" ShortID="382528668">
+											<Language>SFX</Language>
+											<AudioFile>Electric Drill 01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Electric Drill 01" ID="{C391B68A-6287-4CA4-98B6-F96AB7DB4331}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Electric Drill 02" ID="{B8970517-7FD6-4D87-8132-67C7CE3B964E}" ShortID="716752120">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Electric Drill 02" ID="{B3C98836-5AAF-4633-9517-BC2A31DD05E2}" ShortID="779562174">
+											<Language>SFX</Language>
+											<AudioFile>Electric Drill 02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Electric Drill 02" ID="{B3C98836-5AAF-4633-9517-BC2A31DD05E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Electric Drill 03" ID="{9E25C5F7-4C22-442A-86BB-D0A957BF6CC9}" ShortID="632221828">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Electric Drill 03" ID="{AA71C415-6DDA-4FFF-8239-6DC9202B597C}" ShortID="648675162">
+											<Language>SFX</Language>
+											<AudioFile>Electric Drill 03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Electric Drill 03" ID="{AA71C415-6DDA-4FFF-8239-6DC9202B597C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Electric Drill 04" ID="{2A38161A-41E6-4A79-ACDA-1625872427A6}" ShortID="927552713">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{04411C58-F8C2-4FEB-A00C-304A7205C372}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B21F3F4-3F8B-48A0-A7E0-F73B8D790E60}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Electric Drill 04" ID="{C1EBF7DA-F82B-49E1-9D41-E38B709975A8}" ShortID="801407178">
+											<Language>SFX</Language>
+											<AudioFile>Electric Drill 04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Electric Drill 04" ID="{C1EBF7DA-F82B-49E1-9D41-E38B709975A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

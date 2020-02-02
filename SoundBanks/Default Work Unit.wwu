@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="OskourWwise" ID="{B5D7C082-B3D6-4BB7-8011-AA6AE800C1BB}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Drill" ID="{2D4FFFB4-CCFE-407E-997F-4831B1916375}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Respiration_Calme_01" ID="{A4C213EE-5508-40CC-88C2-99197381AD8F}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Stamina_Multiple" ID="{404C0555-5C33-40F1-992D-AAC9595C2483}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Underwater_ambience" ID="{CD5B9AAB-0A3F-4218-A4F1-C39CD552A06F}" WorkUnitID="{76AFD0C9-0E2A-4419-B297-FCD6CBDB0386}" Filter="7" Origin="Manual"/>
